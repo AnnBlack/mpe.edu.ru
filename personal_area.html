@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Высшая школа киноинженеров</title>
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+<link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+    <div class="page-header__logo">
+      <a href="#"><img src="img/HighSchoolCinemaEngineers.svg" alt="Logo" /></a>
+    </div>
+    <nav class="main-nav  main-nav--opened">
+      <button class="main-nav__toggle"></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__items">
+          <li class="main-nav__item  main-nav__item--active">
+            <a href="personal_area.html">Профиль</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="personal_area_course.html">Мои курсы</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="personal_area_manager.html">Связь с менеджером</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="personal_area_requisite.html">Плательщик</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="index.html">Выход</a>
+          </li>
+        </ul>
+
+        <ul class="main-nav__user-items">
+          <li class="main-nav__user-item">
+            <img class="main-nav__user-pic  teacher-menu" src="img/feedback.png" alt="user-picture"/>
+            <span class="warning-pin    warning-pin--header"></span>
+            <a class="main-nav__user-login" href="#" title="Your Name">Неопознанный енот</a>
+
+            <div class="main-nav__popup  main-nav__popup--hidden">
+              <p class="main-nav__popup-text">У вас не до конца заполнен профиль. Для заполнения</p>
+              <a href="personal_area_edit.html" class="main-nav__popup-link">перейдите по ссылке</a>
+              <br>
+              <p class="main-nav__popup-text">У вас не добавлено ни одного плательщика. Для добавления</p>
+              <a href="personal_area_course_buy.html" class="main-nav__popup-link">перейдите по ссылке</a>
+            </div>
+
+            <div class="teacher__popup  teacher__popup--hidden">
+
+              <a href="personal_area_teacher.html" class="teacher__popup-link">Учительская</a>
+
+            </div>
+
+            <!--<ul class="main-nav__user-sub-items">
+              <li class="main-nav__user-sub-item">
+                <a class="main-nav__user-sub-item-link" href="#"></a>
+              </li>
+              <li class="main-nav__user-sub-item">
+                <a class="main-nav__user-sub-item-link" href="#"></a>
+              </li>
+              <li class="main-nav__user-sub-item">
+                <a class="main-nav__user-sub-item-link" href="#"></a>
+              </li>
+              <li class="main-nav__user-sub-item">
+                <a class="main-nav__user-sub-item-link" href="#"></a>
+              </li>
+              <li class="main-nav__user-sub-item">
+                <a class="main-nav__user-sub-item-link" href="#"></a>
+              </li>
+            </ul>-->
+
+          </li>
+        </ul>
+      </div>
+    </nav>
+    </div>
+  </header>
+<main class="page-main  page-main--color">
+  <div class="page-main__wrapper">
+    <section class="user-info">
+      <div class="user-info__wrapper">
+        <h1 class="visually-hidden">User Profile</h1>
+        <div class="user-info__img">
+          <img src="img/feedback.png" alt="user-pic">
+          <!--<span class="warning-pin    warning-pin&#45;&#45;main-content"></span>-->
+        </div>
+        <div class="user-info__content">
+          <span class="user-info__name">Неопознанный Енот</span>
+          <div class="user-info__content-item">
+            <span class="user-info__content-item-title">Номер телефона: </span>
+            <span class="user-info__content-item-data">+7 (955) 787-82-85</span>
+          </div>
+          <div class="user-info__content-item">
+            <span class="user-info__content-item-title">Дата рождения: </span>
+            <span class="user-info__content-item-data">09.09.1987</span>
+          </div>
+          <div class="user-info__content-item">
+            <span class="user-info__content-item-title">Город проживания: </span>
+            <span class="user-info__content-item-data">Санкт-Петербург</span>
+          </div>
+          <div class="user-info__content-item">
+            <span class="user-info__content-item-title">Название учебного заведения: </span>
+            <span class="user-info__content-item-data">Санкт-Петербургский Государсвенный Университет</span>
+          </div>
+          <div class="user-info__content-item">
+            <span class="user-info__content-item-title">Специальность: </span>
+            <span class="user-info__content-item-data">Лингвистика</span>
+          </div>
+          <div class="user-info__content-item">
+            <span class="user-info__content-item-title">Год окончания: </span>
+            <span class="user-info__content-item-data">2010</span>
+          </div>
+          <div class="user-info__content-item">
+            <span class="user-info__content-item-title">Место работы: </span>
+            <span class="user-info__content-item-data">АО Невафильм</span>
+          </div>
+        </div>
+        <a href="personal_area_edit.html" class="btn user-info__btn">Редактировать</a>
+      </div>
+    </section>
+  </div>
+</main>
+<footer class="page-footer">
+    <div class="page-footer__wrapper" itemscope itemtype="http://schema.org/Organization">
+      <ul class="page-footer__list">
+          <li class="page-footer__list-item">
+            <span class="page-footer__pin  page-footer__pin--adress"></span>
+            <a itemprop="address" href="#" class="page-footer__link">
+            199397, Санкт-Петербург, ул. Кораблестроителей, дом 33, корпус 2 "Б"
+            </a>
+          </li>
+
+          <li class="page-footer__list-item">
+            <span class="page-footer__pin  page-footer__pin--tel"></span>
+            <a itemprop="telephone" href="+78124497070" class="page-footer__link">
+            8(812)449-70-70
+            </a>
+          </li>
+
+          <li class="page-footer__list-item">
+            <span class="page-footer__pin page-footer__pin--email"></span>
+            <a itemprop="email" href="mailto:info@mpe.edu.ru" class="page-footer__link">
+            info@mpe.edu.ru
+            </a>
+          </li>
+      </ul>
+        <div class="page-footer__copyright">
+            <a href="{% url 'personal' %}" target="_blank" class="page-footer__link">Обработка персональных данных и </a>
+            <a href="{% url 'privacy' %}" target="_blank" class="page-footer__link">политика конфиденциальности</a>
+            <a href="/" target="_blank">mpe.edu.ru.</a>
+        </div>
+        <p class="page-footer__copyright-text">Высшая Школа Киноинженеров © 2016 - 2017</p>
+    </div>
+</footer>
+<script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+</script>
+<script>
+    var popupToggle = document.querySelector('.warning-pin');
+    var popupBlock = document.querySelector('.main-nav__popup');
+
+    popupToggle.addEventListener('click', function() {
+    if (popupBlock.classList.contains('main-nav__popup--hidden')) {
+      popupBlock.classList.remove('main-nav__popup--hidden');
+      popupBlock.classList.add('main-nav__popup--open');
+    } else {
+      popupBlock.classList.add('main-nav__popup--hidden');
+      popupBlock.classList.remove('main-nav__popup--open');
+    }
+    });
+</script>
+<script>
+    var popupTeacherToggle = document.querySelector('.teacher-menu');
+    var popupTeacherBlock = document.querySelector('.teacher__popup');
+
+    popupTeacherToggle.addEventListener('click', function() {
+    if (popupTeacherBlock.classList.contains('teacher__popup--hidden')) {
+      popupTeacherBlock.classList.remove('teacher__popup--hidden');
+      popupTeacherBlock.classList.add('teacher__popup--open');
+    } else {
+      popupTeacherBlock.classList.add('teacher__popup--hidden');
+      popupTeacherBlock.classList.remove('teacher__popup--open');
+    }
+    });
+</script>
+</body>
+</html>

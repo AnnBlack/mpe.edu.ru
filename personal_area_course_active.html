@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Высшая школа киноинженеров</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+<link rel="stylesheet" href="css/stylesheet.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<!-- <script>
+$( function() {
+  $( "#draggable" ).draggable({ cursor: "move", });
+} );
+</script> -->
+<!-- <script>
+$( function() {
+$( "#resizable" ).resizable({
+  animate: true
+});
+} );
+</script> -->
+<script>
+$( function() {
+  $( "#button" ).on( "click", function() {
+    $( ".online-content__video" ).switchClass( "online-content__video", "anotherNewClass", 1000 );
+    $( ".anotherNewClass" ).switchClass( "anotherNewClass", "online-content__video", 1000 );
+    $(".online-content__preview" ).switchClass( "online-content__preview", "anotherNewClassTwo", 1000 );
+    $( ".anotherNewClassTwo" ).switchClass( "anotherNewClassTwo", "online-content__preview", 1000 );
+  });
+} );
+</script>
+</head>
+<body>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+    <div class="page-header__logo">
+      <a href="index.html"><img src="img/HighSchoolCinemaEngineers.svg" alt="Logo" /></a>
+    </div>
+    <nav class="main-nav  main-nav--opened">
+      <button class="main-nav__toggle"></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__items">
+          <li class="main-nav__item  main-nav__item--active">
+            <a href="personal_area.html">Профиль</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="personal_area_course.html">Мои курсы</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="personal_area_manager.html">Связь с менеджером</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="personal_area_requisite.html">Плательщик</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="index.html">Выход</a>
+          </li>
+        </ul>
+
+        <ul class="main-nav__user-items">
+          <li class="main-nav__user-item">
+            <img class="main-nav__user-pic" src="img/feedback.png" alt="user-picture"/>
+            <span class="warning-pin    warning-pin--header"></span>
+            <a class="main-nav__user-login" href="#" title="Your Name">Неопознанный енот</a>
+
+            <div class="main-nav__popup  main-nav__popup--hidden">
+              <p class="main-nav__popup-text">У вас не до конца заполнен профиль. Для заполнения</p>
+              <a href="personal_area_edit.html" class="main-nav__popup-link">перейдите по ссылке</a>
+              <br>
+              <p class="main-nav__popup-text">У вас не добавлено ни одного плательщика. Для добавления</p>
+              <a href="personal_area_course_buy.html" class="main-nav__popup-link">перейдите по ссылке</a>
+            </div>
+
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+<main class="page-main  page-main--color">
+  <div class="page-main__wrapper">
+    <section class="progress">
+      <h1 class="progress__title">
+        <span class="progress__title--yellow">Курс:</span>Организация кинопоказа в малых и средних городах
+      </h1>
+      <!--<h2 class="progress__subtitle">
+        <span class="progress__subtitle--yellow">Модуль:</span>Питание в кинобарах
+      </h2>-->
+      <div class="progress-bar">
+        <ul class="progress-bar__items">
+          <li class="progress-bar__item  progress-bar__item-start">
+            <span class="progress-bar__item-title">Start</span>
+          </li>
+          <li class="progress-bar__item  progress-bar__item--done">
+            <span class="progress-bar__item-title">1</span>
+            <span class="progress-bar__score">100%</span>
+          </li>
+          <li class="progress-bar__item  progress-bar__item--done">
+            <span class="progress-bar__item-title">2</span>
+            <span class="progress-bar__score">100%</span>
+          </li>
+          <li class="progress-bar__item  progress-bar__item--done">
+            <span class="progress-bar__item-title">3</span>
+            <span class="progress-bar__score">100%</span>
+          </li>
+          <li class="progress-bar__item">
+            <span class="progress-bar__item-title">4</span>
+            <span class="progress-bar__score"></span>
+          </li>
+          <li class="progress-bar__item">
+            <span class="progress-bar__item-title">5</span>
+            <span class="progress-bar__score"></span>
+          </li>
+          <li class="progress-bar__item">
+            <span class="progress-bar__item-title">6</span>
+            <span class="progress-bar__score"></span>
+          </li>
+          <li class="progress-bar__item">
+            <span class="progress-bar__item-title">7</span>
+            <span class="progress-bar__score"></span>
+          </li>
+          <li class="progress-bar__item">
+            <span class="progress-bar__item-title">8</span>
+            <span class="progress-bar__score"></span>
+          </li>
+          <li class="progress-bar__item">
+            <span class="progress-bar__item-title">9</span>
+            <span class="progress-bar__score"></span>
+          </li>
+          <li class="progress-bar__item">
+            <span class="progress-bar__item-title">10</span>
+            <span class="progress-bar__score"></span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+      <!--<form method="post">
+        <div class="progress-bar">
+          <ul class="progress-bar__items">
+            <li class="progress-bar__item">
+              <input type="checkbox" name="start" id="start" checked>
+              <label for="start">Start</label>
+            </li>
+            <li class="progress-bar__item">
+              <input type="checkbox" name="first" id="first">
+              <label for="first">1</label>
+              <span class="progress-bar__score">100%</span>
+            </li>
+            <li class="progress-bar__item">
+              <input type="checkbox" name="second" id="second">
+              <label for="second">2</label>
+              <span class="progress-bar__score">95%</span>
+            </li>
+            <li class="progress-bar__item">
+              <input type="checkbox" name="third" id="third">
+              <label for="third">3</label>
+              <span class="progress-bar__score">100%</span>
+            </li>
+            <li class="progress-bar__item">
+              <input type="checkbox" name="fourth" id="fourth">
+              <label for="fourth">4</label>
+              <span class="progress-bar__score"></span>
+            </li>
+            <li class="progress-bar__item">
+              <input type="checkbox" name="fifth" id="fifth">
+              <label for="fifth">5</label>
+              <span class="progress-bar__score"></span>
+            </li>
+            <li class="progress-bar__item">
+              <input type="checkbox" name="sixth" id="sixth">
+              <label for="sixth">6</label>
+              <span class="progress-bar__score"></span>
+            </li>
+            <li class="progress-bar__item">
+              <input type="checkbox" name="seventh" id="seventh">
+              <label for="seventh">7</label>
+              <span class="progress-bar__score"></span>
+            </li>
+            <li class="progress-bar__item">
+              <input type="checkbox" name="eighth" id="eighth">
+              <label for="eighth">8</label>
+              <span class="progress-bar__score"></span>
+            </li>
+            <li class="progress-bar__item">
+              <input type="checkbox" name="ninth" id="ninth">
+              <label for="ninth">9</label>
+              <span class="progress-bar__score"></span>
+            </li>
+            <li class="progress-bar__item">
+              <input type="checkbox" name="tenth" id="tenth">
+              <label for="tenth">10</label>
+              <span class="progress-bar__score"></span>
+            </li>
+          </ul>
+        </div>
+      </form>-->
+
+    <section class="online-content">
+      <h2 class="visually-hidden">Модуль: Питание в кинобарах</h2>
+      <div class="online-content__wrapper">
+        <div class="online-content__video" id="draggable" id="resizable">
+          <!-- Здесь должно быть видео -->
+          <span class="resize-toggle" id="button"></span>
+          <img src="img/print23.png" alt="Logo" width="750" height="auto" />
+        </div>
+        <div class="online-content__preview">
+          <img src="img/print24.png" alt="print24" />
+        </div>
+        <div class="online-content__content">
+          <ul class="online-content__content-items  portlet-content">
+            <p>Содержание модуля:</p>
+            <li class="online-content__content-item">
+              <a class="online-content__content-link" href="#">It's a super name of the first Topic</a>
+            </li>
+            <li class="online-content__content-item">
+              <a class="online-content__content-link" href="#">It's a super name of the second Topic</a>
+            </li>
+            <li class="online-content__content-item">
+              <a class="online-content__content-link" href="#">It's a super name of the third Topic</a>
+            </li>
+            <li class="online-content__content-item">
+              <a class="online-content__content-link" href="#">It's a super name of the fourth Topic</a>
+            </li>
+            <li class="online-content__content-item">
+              <a class="online-content__content-link" href="#">It's a super name of the fifth Topic</a>
+            </li>
+            <li class="online-content__content-item">
+              <a class="online-content__content-link" href="#">It's a super name of the sixth Topic</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="course-content">
+      <h2 class="visually-hidden"></h2>
+      <div class="course-content__wrapper">
+        <div class="course-content__nav  tabs-container  tabs-nojs">
+          <div class="course-content__nav-links  tabs-container__nav">
+            <a href="#tabs1" data-toggle="tab" class="course-content__nav-link  tabs-container__nav-link  is-active">Курс</a>
+            <a href="#tabs2" data-toggle="tab" class="course-content__nav-link  tabs-container__nav-link">Материалы к курсу</a>
+            <a href="#tabs3" data-toggle="tab" class="course-content__nav-link  tabs-container__nav-link">Информация о курсе</a>
+            <a href="#tabs4" data-toggle="tab" class="course-content__nav-link  tabs-container__nav-link">Преподаватели</a>
+          </div>
+          <div id="tabs1" class="course-content__content  tab-container__content">
+
+            <ul class="course-content__module">
+              <li class="course-content__module-item">
+                <span class="course-content__module-item--done"></span>
+                <a class="course-content__module-item-link" href="#">It's a super name of the first Module</a>
+
+                <ul class="course-content__topic">
+                  <li class="course-content__topic-item">
+                    <a class="course-content__topic-item-link" href="#">I am small topic in the Module</a>
+                  </li>
+                  <li class="course-content__topic-item">
+                    <a class="course-content__topic-item-link" href="#">I am small topic in the Module</a>
+                  </li>
+                  <li class="course-content__topic-item">
+                    <a class="course-content__topic-item-link" href="#">I am small topic in the Module</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="course-content__module-item">
+                <span class="course-content__module-item--open"></span>
+                <a class="course-content__module-item-link" href="#">It's a super name of the second Module</a>
+
+                <ul class="course-content__topic">
+                  <li class="course-content__topic-item">
+                    <a class="course-content__topic-item-link" href="#">I am small topic in the Module</a>
+                  </li>
+                  <li class="course-content__topic-item">
+                    <a class="course-content__topic-item-link" href="#">I am small topic in the Module</a>
+                  </li>
+                  <li class="course-content__topic-item">
+                    <a class="course-content__topic-item-link" href="#">I am small topic in the Module</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="course-content__module-item  is-close">
+                <span class="course-content__module-item--close"></span>
+                <a class="course-content__module-item-link" href="#">It's a super name of the second Module</a>
+
+                <ul class="course-content__topic">
+                  <li class="course-content__topic-item">
+                    <a class="course-content__topic-item-link" href="#">I am small topic in the Module</a>
+                  </li>
+                  <li class="course-content__topic-item">
+                    <a class="course-content__topic-item-link" href="#">I am small topic in the Module</a>
+                  </li>
+                  <li class="course-content__topic-item">
+                    <a class="course-content__topic-item-link" href="#">I am small topic in the Module</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div id="tabs2" class="course-content__content  tab-container__content">
+
+          </div>
+
+          <div id="tabs3" class="course-content__content  tab-container__content">
+
+          </div>
+
+          <div id="tabs4" class="course-content__content  tab-container__content">
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </div> <!-- page main wrapper closed -->
+</main>
+<footer class="page-footer">
+    <div class="page-footer__wrapper" itemscope itemtype="http://schema.org/Organization">
+      <ul class="page-footer__list">
+          <li class="page-footer__list-item">
+            <span class="page-footer__pin  page-footer__pin--adress"></span>
+            <a itemprop="address" href="#" class="page-footer__link">
+            199397, Санкт-Петербург, ул. Кораблестроителей, дом 33, корпус 2 "Б"
+            </a>
+          </li>
+
+          <li class="page-footer__list-item">
+            <span class="page-footer__pin  page-footer__pin--tel"></span>
+            <a itemprop="telephone" href="+78124497070" class="page-footer__link">
+            8(812)449-70-70
+            </a>
+          </li>
+
+          <li class="page-footer__list-item">
+            <span class="page-footer__pin page-footer__pin--email"></span>
+            <a itemprop="email" href="mailto:info@mpe.edu.ru" class="page-footer__link">
+            info@mpe.edu.ru
+            </a>
+          </li>
+      </ul>
+        <div class="page-footer__copyright">
+            <a href="#" target="_blank" class="page-footer__link">Обработка персональных данных и </a>
+            <a href="#" target="_blank" class="page-footer__link">политика конфиденциальности</a>
+            <a href="#" target="_blank">mpe.edu.ru.</a>
+        </div>
+        <p class="page-footer__copyright-text">Высшая Школа Киноинженеров © 2016 - 2017</p>
+    </div>
+</footer>
+<script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+</script>
+<script>
+    var popupToggle = document.querySelector('.warning-pin');
+    var popupBlock = document.querySelector('.main-nav__popup');
+
+    popupToggle.addEventListener('click', function() {
+    if (popupBlock.classList.contains('main-nav__popup--hidden')) {
+      popupBlock.classList.remove('main-nav__popup--hidden');
+      popupBlock.classList.add('main-nav__popup--open');
+    } else {
+      popupBlock.classList.add('main-nav__popup--hidden');
+      popupBlock.classList.remove('main-nav__popup--open');
+    }
+    });
+</script>
+<script>
+    var tabsLinks = document.querySelectorAll('.tabs-container__nav a'),
+      tabsElement = document.querySelectorAll('.tab-container__content'),
+      i;
+
+      tabsElement[0].classList.add('tab-container__content--opened');
+
+    var showTabs = function(e) {
+      e.preventDefault();
+    var targetElement = document.querySelectorAll(this.getAttribute('href'));
+      for (i = 0; i < targetElement.length; i++) {
+      if (targetElement[i].classList.contains('tab-container__content--opened')) {
+        return false;
+      } else targetElement[i].classList.add('tab-container__content--opened');
+    }
+    targetElement = document.querySelectorAll(".tab-container__content.tab-container__content--opened:not("+ this.getAttribute('href')+")");
+      for (i = 0; i < targetElement.length; i++) {
+      targetElement[i].classList.remove('tab-container__content--opened');
+    }
+    };
+      for (i = 0; i < tabsLinks.length; i++) {
+      tabsLinks[i].addEventListener('click', showTabs);
+    }
+</script>
+</body>
+</html>

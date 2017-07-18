@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Высшая школа киноинженеров</title>
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+<link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+    <div class="page-header__logo">
+      <a href="#"><img src="img/HighSchoolCinemaEngineers.svg" alt="Logo" /></a>
+    </div>
+    <nav class="main-nav  main-nav--opened">
+      <button class="main-nav__toggle"></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__items">
+          <li class="main-nav__item  main-nav__item--active">
+            <a href="personal_area.html">Профиль</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="personal_area_course.html">Мои курсы</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="personal_area_manager.html">Связь с менеджером</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="personal_area_requisite.html">Плательщик</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="index.html">Выход</a>
+          </li>
+        </ul>
+
+        <ul class="main-nav__user-items">
+          <li class="main-nav__user-item">
+            <img class="main-nav__user-pic" src="img/feedback.png" alt="user-picture"/>
+            <span class="warning-pin    warning-pin--header"></span>
+            <a class="main-nav__user-login" href="#" title="Your Name">Неопознанный енот</a>
+
+            <div class="main-nav__popup  main-nav__popup--hidden">
+              <p class="main-nav__popup-text">У вас не до конца заполнен профиль. Для заполнения</p>
+              <a href="personal_area_edit.html" class="main-nav__popup-link">перейдите по ссылке</a>
+              <br>
+              <p class="main-nav__popup-text">У вас не добавлено ни одного плательщика. Для добавления</p>
+              <a href="personal_area_course_buy.html" class="main-nav__popup-link">перейдите по ссылке</a>
+            </div>
+
+            <!--<ul class="main-nav__user-sub-items">
+              <li class="main-nav__user-sub-item">
+                <a class="main-nav__user-sub-item-link" href="#"></a>
+              </li>
+              <li class="main-nav__user-sub-item">
+                <a class="main-nav__user-sub-item-link" href="#"></a>
+              </li>
+              <li class="main-nav__user-sub-item">
+                <a class="main-nav__user-sub-item-link" href="#"></a>
+              </li>
+              <li class="main-nav__user-sub-item">
+                <a class="main-nav__user-sub-item-link" href="#"></a>
+              </li>
+              <li class="main-nav__user-sub-item">
+                <a class="main-nav__user-sub-item-link" href="#"></a>
+              </li>
+            </ul>-->
+
+          </li>
+        </ul>
+      </div>
+    </nav>
+    </div>
+  </header>
+<main class="page-main  page-main--color">
+  <div class="page-main__wrapper  page-main__fluid-wrapper">
+    <section class="user-setting">
+      <h1 class="visually-hidden">User Profile setting</h1>
+
+        <form action="" method="post" class="user-setting__form">
+        <div class="user-setting__desktop-wrap">
+
+          <div class="user-setting__img  user-setting__row-desktop--left">
+              <img src="img/feedback.png" alt="user-pic">
+              <button class="user-setting__btn">Загрузить фото</button>
+          </div>
+          <fieldset class="user-setting__form-fieldset  user-setting__row-desktop--right">
+
+            <label for="name" class="user-setting__form-label">Имя:</label>
+            <input type="text" id="name" name="name" placeholder="Укажите ваше Имя*" class="user-setting__form-input" required />
+
+            <label for="surname" class="user-setting__form-label">Фамилия:</label>
+            <input type="text" id="surname" name="surname" placeholder="Укажите вашу Фамилию*" class="user-setting__form-input" required />
+
+            <label for="family" class="user-setting__form-label">Отчество:</label>
+            <input type="text" id="family" name="family" placeholder="Укажите ваше Отчество*" class="user-setting__form-input" required />
+
+            <label for="birthday" class="user-setting__form-label">Дата рождения:</label>
+            <input type="date" id="birthday" name="birthday" placeholder="Укажите дату рождения*" class="user-setting__form-input" required />
+
+            <p class="user-setting__form-label">Пол:</p>
+            <input type="checkbox"  id="malesex" name="malesex" checked required />
+            <label for="malesex" class="user-setting__form-label">Мужской</label>
+            <input type="checkbox"  id="femalesex" name="femalesex" required />
+            <label for="femalesex" class="user-setting__form-label">Женский</label>
+
+          </fieldset>
+        <!--</div>-->
+        <!--<div class="user-setting__form-wrapper&#45;&#45;desktop">-->
+
+          <fieldset class="user-setting__form-fieldset  user-setting__row-desktop--left">
+            <label for="tel" class="user-setting__form-label">Номер телефона:</label>
+            <input type="tel" id="tel" name="tel" placeholder="Укажите номер телефона" class="user-setting__form-input" />
+
+            <label for="city" class="user-setting__form-label">Город проживания:</label>
+            <input type="text" id="city" name="city" placeholder="Укажите город проживания" class="user-setting__form-input" />
+
+            <label for="uni" class="user-setting__form-label">Учебное заведение:</label>
+            <input type="text" id="uni" name="uni" placeholder="Укажите учебное заведение" class="user-setting__form-input" />
+          </fieldset>
+          <fieldset class="user-setting__form-fieldset  user-setting__row-desktop--right">
+            <label for="prof" class="user-setting__form-label">Специальность:</label>
+            <input type="text" id="prof" name="prof" placeholder="Укажите специальность" class="user-setting__form-input" />
+
+            <label for="graduated" class="user-setting__form-label">Год окончания:</label>
+            <input type="text" id="graduated" name="graduated" placeholder="Укажите год окончания" class="user-setting__form-input" />
+
+            <label for="work" class="user-setting__form-label">Место работы:</label>
+            <input type="text" id="work" name="work" placeholder="Укажите место работы" class="user-setting__form-input" />
+
+            <button type="button" class="user-setting__btn  user-setting__btn-mobile-hidden" formmethod="post">Фото паспорта</button>
+            <button type="button" class="user-setting__btn  user-setting__btn-mobile-hidden" formmethod="post">Фото диплома</button>
+          </fieldset>
+        <!--</div>-->
+          <button type="button" class="user-setting__btn  user-setting__btn--full" method="post">Сохранить</button>
+        </div>
+        </form>
+      </section>
+    </div>
+</main>
+<footer class="page-footer">
+    <div class="page-footer__wrapper" itemscope itemtype="http://schema.org/Organization">
+      <ul class="page-footer__list">
+          <li class="page-footer__list-item">
+            <span class="page-footer__pin  page-footer__pin--adress"></span>
+            <a itemprop="address" href="#" class="page-footer__link">
+            199397, Санкт-Петербург, ул. Кораблестроителей, дом 33, корпус 2 "Б"
+            </a>
+          </li>
+
+          <li class="page-footer__list-item">
+            <span class="page-footer__pin  page-footer__pin--tel"></span>
+            <a itemprop="telephone" href="+78124497070" class="page-footer__link">
+            8(812)449-70-70
+            </a>
+          </li>
+
+          <li class="page-footer__list-item">
+            <span class="page-footer__pin page-footer__pin--email"></span>
+            <a itemprop="email" href="mailto:info@mpe.edu.ru" class="page-footer__link">
+            info@mpe.edu.ru
+            </a>
+          </li>
+      </ul>
+        <div class="page-footer__copyright">
+            <a href="#" target="_blank" class="page-footer__link">Обработка персональных данных и </a>
+            <a href="#" target="_blank" class="page-footer__link">политика конфиденциальности</a>
+            <a href="#" target="_blank">mpe.edu.ru.</a>
+        </div>
+        <p class="page-footer__copyright-text">Высшая Школа Киноинженеров © 2016 - 2017</p>
+    </div>
+</footer>
+<script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+</script>
+<script>
+    var popupToggle = document.querySelector('.warning-pin');
+    var popupBlock = document.querySelector('.main-nav__popup');
+
+    popupToggle.addEventListener('click', function() {
+    if (popupBlock.classList.contains('main-nav__popup--hidden')) {
+      popupBlock.classList.remove('main-nav__popup--hidden');
+      popupBlock.classList.add('main-nav__popup--open');
+    } else {
+      popupBlock.classList.add('main-nav__popup--hidden');
+      popupBlock.classList.remove('main-nav__popup--open');
+    }
+    });
+</script>
+</body>
+</html>
