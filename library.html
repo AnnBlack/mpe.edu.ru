@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Высшая школа киноинженеров</title>
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+<link rel="stylesheet" href="css/stylesheet(new).css">
+</head>
+<body>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+    <div class="page-header__logo">
+      <a href="index.html"><img src="img/HighSchoolCinemaEngineers.svg" alt="Logo" /></a>
+    </div>
+    <nav class="main-nav  main-nav--opened">
+      <button class="main-nav__toggle"></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__items">
+          <li class="main-nav__item  main-nav__item--active">
+            <a href="#">О школе</a>
+            <ul class="main-nav__sub-menu">
+              <li class="main-nav__sub-menu-item">
+                <a href="#">Документы</a>
+              </li>
+              <li class="main-nav__sub-menu-item">
+                <a href="#">Руководство</a>
+              </li>
+              <li class="main-nav__sub-menu-item">
+                <a href="#">Преподаватели</a>
+              </li>
+            </ul>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">Программы</a>
+            <ul class="main-nav__sub-menu">
+              <li class="main-nav__sub-menu-item">
+                <a href="#">Повышения квалификации</a>
+              </li>
+              <li class="main-nav__sub-menu-item">
+                <a href="#">Профессиональной переподготовки</a>
+              </li>
+              <li class="main-nav__sub-menu-item">
+                <a href="#">Общеобразовательные</a>
+              </li>
+              <li class="main-nav__sub-menu-item">
+                <a href="#">Дополнительные общеобразовательные программы</a>
+              </li>
+            </ul>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">Библиотека</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">Поступающим</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">Новости</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+
+        <ul class="main-nav__user-items">
+          <li class="main-nav__user-item">
+            <a href="personal_area.html" title="Login" class="main-nav__user-login"><span class="login_item"></span></a>
+            <!-- <img class="main-nav__user-pic  teacher-menu" src="img/feedback.png" alt="user-picture"/> -->
+            <!-- <span class="warning-pin    warning-pin--header"></span> -->
+            <!-- <a class="main-nav__user-login" href="#" title="Your Name">Неопознанный енот</a> -->
+
+
+            <!-- <div class="teacher__popup  teacher__popup--hidden">
+              <a href="personal_area_teacher.html" class="teacher__popup-link">Учительская</a>
+            </div> -->
+
+            <!--<ul class="main-nav__user-sub-items">
+              <li class="main-nav__user-sub-item">
+                <a class="main-nav__user-sub-item-link" href="#"></a>
+              </li>
+              <li class="main-nav__user-sub-item">
+                <a class="main-nav__user-sub-item-link" href="#"></a>
+              </li>
+              <li class="main-nav__user-sub-item">
+                <a class="main-nav__user-sub-item-link" href="#"></a>
+              </li>
+              <li class="main-nav__user-sub-item">
+                <a class="main-nav__user-sub-item-link" href="#"></a>
+              </li>
+              <li class="main-nav__user-sub-item">
+                <a class="main-nav__user-sub-item-link" href="#"></a>
+              </li>
+            </ul>-->
+
+          </li>
+        </ul>
+      </div>
+    </nav>
+    </div>
+  </header>
+  <main class="page-main  page-main--color">
+    
+    <div class="page-main__wrapper">
+    <h1 class="main-news__title">БИБЛИОТЕКА</h1>
+      <div class="content-tabs">
+        <ul class="content-tabs__nav">
+          <li class="content-tabs__nav-item">
+            <a href="">НОРМАТИВНЫЕ ДОКУМЕНТЫ</a>
+          </li>
+          <li class="content-tabs__nav-item">
+            <a href="">ОБРАЗЦЫ ДОКУМЕНТОВ</a>
+          </li>
+          <li class="content-tabs__nav-item">
+            <a href="">СПРАВОЧНЫЕ ДОКУМЕНТЫ</a>
+          </li>
+          <li class="content-tabs__nav-item">
+            <a href="">СТАТЬИ</a>
+          </li>
+          <li class="content-tabs__nav-item">
+            <a href="">ЛЕКЦИИ И МАСТЕР-КЛАССЫ</a>
+          </li>
+          <li class="content-tabs__nav-item">
+            <a href="">ВИДЕОМАТЕРИАЛЫ</a>
+          </li>
+        </ul>
+        <div class="content-tabs__panel">
+        <!-- <div class="hashtag-nav">
+          <a href="/">#hello</a>
+          <a href="/">#photopolymerization</a>
+          <a href="/"">#polymer</a>
+          <a href="/">#quality_assessment</a>
+        </div> -->
+        <div class="course-content__content" style="min-width: 100%;">
+          <h2>СТАТЬИ</h2>
+          <div class="course-content__content-text">
+            <form action="post"  method="POST" class="search">
+              <input type="text" name="q" id="id_q"/>
+              <button type="submit" class="btn user-info__btn  margin-left">Поиск</button>
+            </form>
+          </div>
+  
+          <!-- <ul class="main-news__preview  main-news__preview--centered">
+          <li class="main-news__preview-item">
+        <a href="{% url 'article' articleUrlMask=article.URLmask %}">
+        <h3 class="main-news__preview-item-title">МЕТОДИКА СИНТЕЗА ТРЕХМЕРНЫХ ФРАКТАЛЬНЫХ ВИДЕО ДЛЯ ВИДЕОАРТА, ТЕЛЕВИДЕНИЯ И ОЧКОВОГО СТЕРЕО</h3>
+        
+        <time class="main-news__preview-item-title">Дата публикации: 09.09.2017</time>
+  
+        <span class="right">Просмотров: 12</span>
+        <div class="offset_bottom">&nbsp;</div>
+        <p class="u-pull-clear" style="font-size: 12px;">Н.К.Трубочкина, д.т.н., профессор, Департамент компьютерной инженерии, НИУ ВШЭ,  руководитель секции «Мультимедиа арт» Творческого Союза Художников России, Москва, РФ; А.В. Лиховцева</p>
+        <p class="u-pull-clear" style="font-size: 14px; font-weight: 900;">*for free</p>
+        <span class="right"><a href="{% url 'article' articleUrlMask=article.URLmask %}" target="_blank">Подробнее...</a></span>
+        <div class="offset_bottom">&nbsp;</div>
+        </a>
+
+          </li>
+        
+          <li class="main-news__preview-item">
+            <a href="{% url 'article' articleUrlMask=article.URLmask %}">
+            <h3 class="main-news__preview-item-title">МЕТОДИКА СИНТЕЗА ТРЕХМЕРНЫХ ФРАКТАЛЬНЫХ ВИДЕО ДЛЯ ВИДЕОАРТА, ТЕЛЕВИДЕНИЯ И ОЧКОВОГО СТЕРЕО</h3>
+            
+            <time class="main-news__preview-item-title">Дата публикации: 09.09.2017</time>
+      
+            <span class="right">Просмотров: 12</span>
+            <div class="offset_bottom">&nbsp;</div>
+            <p class="u-pull-clear" style="font-size: 12px;">Н.К.Трубочкина, д.т.н., профессор, Департамент компьютерной инженерии, НИУ ВШЭ,  руководитель секции «Мультимедиа арт» Творческого Союза Художников России, Москва, РФ; А.В. Лиховцева</p>
+            <p class="u-pull-clear" style="font-size: 14px; font-weight: 900;">*for free</p>
+            <span class="right"><a href="{% url 'article' articleUrlMask=article.URLmask %}" target="_blank">Подробнее...</a></span>
+            <div class="offset_bottom">&nbsp;</div>
+            </a>
+
+          </li>
+          <li class="main-news__preview-item">
+          <a href="{% url 'article' articleUrlMask=article.URLmask %}">
+          <h3 class="main-news__preview-item-title">МЕТОДИКА СИНТЕЗА ТРЕХМЕРНЫХ ФРАКТАЛЬНЫХ ВИДЕО ДЛЯ ВИДЕОАРТА, ТЕЛЕВИДЕНИЯ И ОЧКОВОГО СТЕРЕО</h3>
+          
+          <time class="main-news__preview-item-title">Дата публикации: 09.09.2017</time>
+    
+          <span class="right">Просмотров: 12</span>
+          <div class="offset_bottom">&nbsp;</div>
+          <p class="u-pull-clear" style="font-size: 12px;">Н.К.Трубочкина, д.т.н., профессор, Департамент компьютерной инженерии, НИУ ВШЭ,  руководитель секции «Мультимедиа арт» Творческого Союза Художников России, Москва, РФ; А.В. Лиховцева</p>
+          <p class="u-pull-clear" style="font-size: 14px; font-weight: 900;">*for free</p>
+          <span class="right"><a href="{% url 'article' articleUrlMask=article.URLmask %}" target="_blank">Подробнее...</a></span>
+          <div class="offset_bottom">&nbsp;</div>
+          </a>
+        </li>
+      </ul> -->
+  </div>
+</div>
+      </div>
+    </div>
+  </main>
+  
+  </main>
+  <footer class="page-footer">
+      <div class="page-footer__wrapper" itemscope itemtype="http://schema.org/Organization">
+        <ul class="page-footer__list">
+            <li class="page-footer__list-item">
+              <span class="page-footer__pin  page-footer__pin--adress"></span>
+              <a itemprop="address" href="#" class="page-footer__link">
+              199397, Санкт-Петербург, ул. Кораблестроителей, дом 33, корпус 2 "Б"
+              </a>
+            </li>
+
+            <li class="page-footer__list-item">
+              <span class="page-footer__pin  page-footer__pin--tel"></span>
+              <a itemprop="telephone" href="+78124497070" class="page-footer__link">
+              8(812)449-70-70
+              </a>
+            </li>
+
+            <li class="page-footer__list-item">
+              <span class="page-footer__pin page-footer__pin--email"></span>
+              <a itemprop="email" href="mailto:info@mpe.edu.ru" class="page-footer__link">
+              info@mpe.edu.ru
+              </a>
+            </li>
+        </ul>
+          <div class="page-footer__copyright">
+              <a href="{% url 'personal' %}" target="_blank" class="page-footer__link">Обработка персональных данных и </a>
+              <a href="{% url 'privacy' %}" target="_blank" class="page-footer__link">политика конфиденциальности</a>
+              <a href="/" target="_blank">mpe.edu.ru.</a>
+          </div>
+          <p class="page-footer__copyright-text">Высшая Школа Киноинженеров © 2016 - 2017</p>
+      </div>
+  </footer>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+   $( function() {
+     $( ".content-tabs" ).tabs();
+   } );
+  </script>
+  <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+  </script>
+  </body>
+  </html>
